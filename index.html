@@ -17,12 +17,11 @@ const original=[
 {kind:"dedication",eyebrow:"dedicatória",title:"A vocês",body:"Este pequeno livro é para vocês, que sempre viveram (as vezes o mais difícil) para que nossa vida fosse mais fácil.\n\nVocês que viveram em funcão do nosso bem estar, vocês que se dedicaram e entregaram tudo por nós."},
 {eyebrow:"primeira parte · os professores",title:"Ser professor hoje é um ato de resistência",ending:"Como diria José Bezerra: \n'Ser professor é fazer no \n presente \n O futuro de muitas vidas'\n\n\nvocês mudam e transformam vidas com escelência!\n\nhonro a vida de vocês"},
 {eyebrow:"as pequenas coisas",title:"O que admiro em vocês",body:"Eu amo muito em vocês — inclusive as coisas que talvez você nem percebam.\n\nA maneira como nossa relação é segura e mesmo que erremos - como sempre - vocês continuam nos apoiando e nos amando tanto.\nOs olhares e pequenas atitudes as vezes quase que despercebidas que relembram em uma segunda feira difíci que ainda somos amadas."},
-{eyebrow:"as pequenas coisas 2.0",title:"Meu abrigo",body:"",ending:"[Nossa saída para comer após semanas intensas de vestibular, vocês foram minha calmaria.]"},
-{eyebrow:"foto",title:"Uma lembrança de alguns anos atrás",body:"",ending:""},
+{eyebrow:"as pequenas coisas 2.0",title:"Meu abrigo",body:"",image:"images/meu-abrigo.png",ending:"[Nossa saída para comer após semanas intensas de vestibular, vocês foram minha calmaria.]"},
+{eyebrow:"foto",title:"Uma lembrança de alguns anos atrás",body:"",image:"images/foto-antiga.png",ending:""},
 {eyebrow:"para terminar · e para continuar",title:"Ainda tenho tanto para dizer",body:"Que este pequeno livro seja uma pequena e mínima maneira de começar a agradecer por serem a presença e o caminho que me permitiu chegar até aqui. Amo vocês mais do que podem imaginar e mais do que sei expressar!",ending:"Com amor, Laurinha"}
 ];
-const KEY="mini-livro-amor-v1";let data,idx=0,editing=false,pendingPhoto=null,touchX=null;
-const $=s=>document.querySelector(s),page=$("#page"),input=$("#photoInput");
+const KEY="mini-livro-amor-v2";let data,idx=0,editing=false,pendingPhoto=null,touchX=null;const $=s=>document.querySelector(s),page=$("#page"),input=$("#photoInput");
 function load(){try{const s=JSON.parse(localStorage.getItem(KEY));data=Array.isArray(s)&&s.length===original.length?s:JSON.parse(JSON.stringify(original))}catch(e){data=JSON.parse(JSON.stringify(original))}}
 function persist(){try{localStorage.setItem(KEY,JSON.stringify(data));return true}catch(e){toast("Não foi possível salvar. Tente uma imagem menor.");return false}}
 function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -49,3 +48,5 @@ input.onchange=()=>{const f=input.files&&input.files[0];if(!f||pendingPhoto===nu
 load();render();
 })();
 </script></body></html>
+
+
