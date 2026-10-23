@@ -13,13 +13,13 @@
 <script>
 (function(){
 const original=[
-{kind:"cover",eyebrow:"um pequeno livro de amor",title:"Para você",subtitle:"Palavras que guardo com carinho"},
-{kind:"dedication",eyebrow:"dedicatória",title:"A você",body:"Este pequeno livro é para você.\n\nPara dizer, com calma, algumas coisas que talvez eu não diga o bastante: a sua presença importa. E o espaço que você ocupa no meu coração é só seu.",ending:"Com todo o meu carinho"},
-{eyebrow:"capítulo um · o começo de tudo",title:"O que muda quando você chega",body:"Há pessoas que tornam o dia mais leve sem sequer perceber. Você tem esse jeito — e, desde que faz parte da minha vida, até os momentos comuns ganharam uma ternura diferente.\n\nGosto de pensar que amar também é isso: encontrar alegria no simples só porque posso dividir o instante com você.",ending:"E eu gosto de dividir a vida com você."},
-{eyebrow:"capítulo dois · as pequenas coisas",title:"O que admiro em você",body:"Eu amo muito em você — inclusive as coisas que talvez você nem perceba.\n\nA sua maneira de [escreva aqui algo que você admira]. O jeito como [acrescente um detalhe especial]. São pequenos gestos, mas ficam comigo. Em mim, eles fazem morada.",ending:"[Se quiser, conte aqui uma lembrança especial.]"},
-{eyebrow:"capítulo três · o que sinto",title:"Meu lugar favorito",body:"Não preciso de uma ocasião grandiosa para saber o quanto você é especial para mim. Esse amor aparece no cuidado, na vontade de saber como foi o seu dia e na alegria que sinto quando estamos perto.\n\nAmo você por quem você é — e também por quem eu posso ser ao seu lado.",ending:"[Adicione aqui uma foto ou uma lembrança de vocês.]"},
-{eyebrow:"um pequeno intervalo",title:"Uma lembrança em imagem",body:"Algumas lembranças cabem numa fotografia. Outras ficam inteiras na gente.\n\nEscolha uma imagem que tenha significado para vocês, ou deixe esta página sem foto e volte quando quiser.",ending:""},
-{eyebrow:"para terminar · e para continuar",title:"Ainda tenho tanto para dizer",body:"Eu amo você. Amo a pessoa que você é, o que a sua presença desperta em mim e a possibilidade de seguir construindo momentos ao seu lado.\n\nQue este pequeno livro seja um lembrete: entre tantas coisas que eu poderia dizer, esta é a mais importante. Você é muito amado por mim.",ending:"Com amor, [seu nome]"}
+{kind:"cover",eyebrow:"Uma demonstração do meu amor",title:"Para meus papais"},
+{kind:"dedication",eyebrow:"dedicatória",title:"A vocês",body:"Este pequeno livro é para vocês, que sempre viveram (as vezes o mais difícil) para que nossa vida fosse mais fácil.\n\nVocês que viveram em funcão do nosso bem estar, vocês que se dedicaram e entregaram tudo por nós."},
+{eyebrow:"primeira parte · os professores",title:"Ser professor hoje é um ato de resistência",ending:"Como diria José Bezerra: \n'Ser professor é fazer no \n presente \n O futuro de muitas vidas'\n\n\nvocês mudam e transformam vidas com escelência!\n\nhonro a vida de vocês"},
+{eyebrow:"as pequenas coisas",title:"O que admiro em vocês",body:"Eu amo muito em vocês — inclusive as coisas que talvez você nem percebam.\n\nA maneira como nossa relação é segura e mesmo que erremos - como sempre - vocês continuam nos apoiando e nos amando tanto.\nOs olhares e pequenas atitudes as vezes quase que despercebidas que relembram em uma segunda feira difíci que ainda somos amadas."},
+{eyebrow:"as pequenas coisas 2.0",title:"Meu abrigo",body:"",ending:"[Nossa saída para comer após semanas intensas de vestibular, vocês foram minha calmaria.]"},
+{eyebrow:"foto",title:"Uma lembrança de alguns anos atrás",body:"",ending:""},
+{eyebrow:"para terminar · e para continuar",title:"Ainda tenho tanto para dizer",body:"Que este pequeno livro seja uma pequena e mínima maneira de começar a agradecer por serem a presença e o caminho que me permitiu chegar até aqui. Amo vocês mais do que podem imaginar e mais do que sei expressar!",ending:"Com amor, Laurinha"}
 ];
 const KEY="mini-livro-amor-v1";let data,idx=0,editing=false,pendingPhoto=null,touchX=null;
 const $=s=>document.querySelector(s),page=$("#page"),input=$("#photoInput");
